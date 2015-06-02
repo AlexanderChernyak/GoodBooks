@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+    <property name="hibernate.connection.pool_size">1</property>    
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    
+    <mapping class="by.bsuir.entity.Genre"></mapping>
+    <mapping class="by.bsuir.entity.User"></mapping>
+    <mapping class="by.bsuir.entity.Book"></mapping>
+    <mapping class="by.bsuir.entity.Stylistic"></mapping>
+    <mapping class="by.bsuir.entity.Author"></mapping>
+    <mapping class="by.bsuir.entity.Annotation"></mapping>
+    <mapping class="by.bsuir.entity.Comment"></mapping>
+    <mapping class="by.bsuir.entity.LibraryCard"></mapping>
+    <mapping class="by.bsuir.entity.UserRole"></mapping>
+    
+  </session-factory>
+</hibernate-configuration>
